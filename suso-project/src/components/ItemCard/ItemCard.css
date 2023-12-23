@@ -1,0 +1,9 @@
+.item-image{
+    max-width: 20%; /* Establece el ancho máximo al 100% del contenedor */
+  height: 20%;    /* Ajusta la altura automáticamente */
+}
+
+.botonVer{
+  color: white;
+  text-decoration: none;
+}

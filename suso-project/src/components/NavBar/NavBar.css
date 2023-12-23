@@ -1,5 +1,28 @@
-.bg-custom-color{
-    background-color: rgb(131, 35, 187);
+
+.custom-navbar {
+    background-color: #AD92F1;
     color: white;
     font-size: 24px;
-}
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+
+  .NavLinks{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font: bold;
+    font-size: 24px;
+    padding: 5px;
+    text-decoration: none;
+    
+  }
+
+  .NavLinks:hover{
+    background-color: rgba(255, 255, 255, 0.315);
+    border-radius: 10px;
+  }
+  
