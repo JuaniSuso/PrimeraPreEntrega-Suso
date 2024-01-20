@@ -1,0 +1,24 @@
+.separador {
+    color: white;
+    padding: 5px;
+
+}
+
+.botonCarrito{
+    color: white;
+    background-color: rgb(230, 139, 36);
+    border: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.botonCarrito:hover{
+    background-color: rgba(230, 140, 36, 0.671);
+    transition: 0.5s;
+}
+.btnCustom{
+    color: white;
+    background-color: rgb(230, 139, 36);
+    
+}

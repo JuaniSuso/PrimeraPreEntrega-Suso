@@ -1,9 +1,27 @@
-.item-image{
-    max-width: 20%; /* Establece el ancho máximo al 100% del contenedor */
-  height: 20%;    /* Ajusta la altura automáticamente */
+/* ItemCard.css */
+.w-80 {
+  display: flex;
+  padding: 50px;
+  align-items: center; /* Centra verticalmente los elementos en la fila */
+  background-color: #705E9C;
+
 }
 
-.botonVer{
+.item-image {
+  width: 200px; /* Ajusta el ancho de la imagen según tus preferencias */ /* Mantén la proporción de la imagen */
+  height: auto;
+  margin-right: 20px; /* Espacio entre la imagen y el contenido */
+}
+
+.text-container {
+  flex: 1; /* Hace que el contenedor de texto ocupe el espacio restante */
+}
+
+.text-white {
+  color: white; /* Ajusta el color del texto según tu diseño */
+}
+
+.botonVer {
   color: white;
   text-decoration: none;
 }

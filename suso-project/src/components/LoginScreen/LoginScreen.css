@@ -1,0 +1,44 @@
+/* LoginScreen.css */
+
+.LoginContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+.LoginForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #705E9C;
+  border-radius: 10px;
+  width: 400px; /* Ajusta el ancho según sea necesario */
+  text-align: center; /* Añade esta línea para centrar los campos en el formulario */
+}
+
+.inputForm{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.LoginH2 {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  width: 100%; /* Ajusta el ancho según sea necesario */
+}
+
+.sendButtonLogin {
+  background-color: rgb(230, 139, 36);
+  color: white;
+  border-radius: 5px;
+  margin-top: 10px;
+  width: 100%; /* Ajusta el ancho del botón al 100% */
+  text-align: center; /* Añade esta línea para centrar el botón */
+}

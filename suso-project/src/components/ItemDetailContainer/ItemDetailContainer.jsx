@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
-import { pedirDatos } from "../../utils/utils";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
+import { db } from "../../firebase/config";
+import { doc, getDoc } from "firebase/firestore";
 
 const ItemDetailContainer = () => {
   const [loading, setLoading] = useState(true);
@@ -12,18 +13,27 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     setLoading(true);
 
-    pedirDatos()
-      .then((data) => {
-        const selectedItem = data.find((prod) => prod.id === Number(itemId));
-        setItem(selectedItem);
+    const docRef = doc(db, 'productos', itemId )
+
+    getDoc ( docRef )
+      .then((docSnapshot) => {
+        const doc = {
+          ...docSnapshot.data(),
+          id: docSnapshot.id
+        }
+
+        setItem(doc)
       })
-      .catch((error) => console.error("Error fetching data:", error))
-      .finally(() => setLoading(false));
+      .finally(() => setLoading(false))
+    
+
+
   }, [itemId]);
 
   return (
     <>
-      {loading ? (
+      {
+      loading ? (
         <h2 className="text-white my-5 text-center text-4x1 mt-8">
           Cargando...
         </h2>
@@ -31,7 +41,7 @@ const ItemDetailContainer = () => {
         <ItemDetail item={item} />
       ) : (
         <p className="text-white my-5 text-center">Producto no encontrado</p>
-      )}
+      ) }
     </>
   );
 };

@@ -1,0 +1,28 @@
+.payForm{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px;
+    
+
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.sendButton{
+    background-color: rgb(230, 139, 36);
+    color: white;
+   border-radius: 5px;
+   border: 10px;
+
+}
+
+.sendButton:hover{
+    background-color: rgba(230, 140, 36, 0.671);
+}

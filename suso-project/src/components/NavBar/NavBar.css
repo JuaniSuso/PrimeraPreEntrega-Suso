@@ -1,28 +1,83 @@
-
 .custom-navbar {
-    background-color: #AD92F1;
-    color: white;
-    font-size: 24px;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  
+  background-color: #ad92f1;
+  color: white;
+  font-size: 24px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .NavLinks{
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font: bold;
-    font-size: 24px;
-    padding: 5px;
-    text-decoration: none;
-    
-  }
+.NavLinks {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px;
+  text-decoration: none;
+}
 
-  .NavLinks:hover{
-    background-color: rgba(255, 255, 255, 0.315);
-    border-radius: 10px;
-  }
-  
+.NavLinks:hover {
+  background-color: rgba(255, 255, 255, 0.315);
+  border-radius: 10px;
+}
+
+.cart-icon {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+
+.cart-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.cart-icon:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+}
+
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-email,
+.logout-button {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.logout-button{
+  background-color: rgb(230, 139, 36);
+}
+
+.user-email:hover,
+.logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.315);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.user-email {
+  margin-right: 10px;
+}
+
+/* Añadir estos estilos */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+.user-email,
+.logout-button {
+  margin: 0;
+}
